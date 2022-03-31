@@ -5,7 +5,7 @@ import pickle
 
 
 st.set_page_config(page_title="Predicting Heat Disease with Ensemble Models")
-overview = st.beta_container()
-left, right = st.beta_columns(2)
-prediction = st.beta_container()
+overview = st.container()
+left, right = st.columns(2)
+prediction = st.container()
 
