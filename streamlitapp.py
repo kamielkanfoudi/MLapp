@@ -39,6 +39,8 @@ with left:
 	Sex_radio = st.radio( "What is your gender?", list(Sex.keys()), format_func=lambda x : Sex[x] )
 	PhysicalActivity_radio = st.radio( " Have you been engaging in physical activity or exercise during the past 30 days other than your regular job?", list(PhysicalActivity.keys()), format_func=lambda x : PhysicalActivity[x] )
 	Age_radio = st.radio( "Age", list(AgeCategory.keys()), format_func=lambda x : AgeCategory[x] )
+	
+with right:
 	GenHealth_radio = st.radio( "Would you say that in general your health is...", list(GenHealth.keys()), format_func=lambda x : GenHealth[x] )
 	Diabetic_radio = st.radio( "Diabetic", list(Diabetic.keys()), format_func=lambda x : Diabetic[x] )
 	Race_radio = st.radio( "Race", list(Race.keys()), format_func=lambda x : Race[x] )
