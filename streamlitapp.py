@@ -4,6 +4,4 @@ import altair as alt
 import pickle
 
 
-st.set_page_config(page_title="Predicting Heat Disease with Ensemble Models")
-
-
+st.title('Predicting Heart Disease')
