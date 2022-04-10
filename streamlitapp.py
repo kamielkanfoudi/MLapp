@@ -2,6 +2,7 @@
 import streamlit as st
 import pickle
 from datetime import datetime
+import sklearn 
 
 
 filename = "RFC_model-sv.sv"
