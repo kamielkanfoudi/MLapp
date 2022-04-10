@@ -70,7 +70,7 @@ data = [[Smoking_radio,
 	BMI_slider, 
 	physhealth_slider, 
 	mental_slider, 
-	sleep_radio]]
+	sleep_slider]]
 disease = model.predict(data)
 s_confidence = model.predict_proba(data)
 
