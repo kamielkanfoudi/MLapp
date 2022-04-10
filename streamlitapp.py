@@ -38,15 +38,16 @@ with left:
 	DiffWalking_radio = st.radio( "Do you have serious difficulty walking or climbing stairs?", list(DiffWalking.keys()), format_func=lambda x : DiffWalking[x] )
 	Sex_radio = st.radio( "What is your gender?", list(Sex.keys()), format_func=lambda x : Sex[x] )
 	PhysicalActivity_radio = st.radio( " Have you been engaging in physical activity or exercise during the past 30 days other than your regular job?", list(PhysicalActivity.keys()), format_func=lambda x : PhysicalActivity[x] )
-	Age_radio = st.radio( "Age", list(AgeCategory.keys()), format_func=lambda x : AgeCategory[x] )
-	
-with right:
-	GenHealth_radio = st.radio( "Would you say that in general your health is...", list(GenHealth.keys()), format_func=lambda x : GenHealth[x] )
 	Diabetic_radio = st.radio( "Diabetic", list(Diabetic.keys()), format_func=lambda x : Diabetic[x] )
-	Race_radio = st.radio( "Race", list(Race.keys()), format_func=lambda x : Race[x] )
 	SkinCancer_radio = st.radio( "Have you had Skin Cancer?", list(SkinCancer.keys()), format_func=lambda x : SkinCancer[x] )
 	KidneyDisease_radio = st.radio( "Have you had a Kidney Disease?", list(KidneyDisease.keys()), format_func=lambda x : KidneyDisease[x] )
 	Asthma_radio = st.radio( "Do you have asthma?", list(Asthma.keys()), format_func=lambda x : Asthma[x] )
+	
+with right:
+	Age_radio = st.radio( "Age", list(AgeCategory.keys()), format_func=lambda x : AgeCategory[x] )
+	GenHealth_radio = st.radio( "Would you say that in general your health is...", list(GenHealth.keys()), format_func=lambda x : GenHealth[x] )
+	Race_radio = st.radio( "Race", list(Race.keys()), format_func=lambda x : Race[x] )
+	
 					 
 					 
 					 
