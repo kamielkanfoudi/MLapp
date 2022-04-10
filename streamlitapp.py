@@ -5,9 +5,9 @@ from datetime import datetime
 import sklearn
 
 st.set_page_config(page_title="Predicting Heart Disease")
-overview = st.beta_container()
-left, right = st.beta_columns(2)
-prediction = st.beta_container()
+overview = st.container()
+left, right = st.columns(2)
+prediction = st.container()
 
 with overview:
 	st.title("Predicting Heart Disease")
