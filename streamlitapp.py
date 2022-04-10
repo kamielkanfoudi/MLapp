@@ -49,7 +49,7 @@ with right:
 	Race_radio = st.radio( "Race", list(Race.keys()), format_func=lambda x : Race[x] )
 	Sex_radio = st.radio( "What is your gender?", list(Sex.keys()), format_func=lambda x : Sex[x] )
 
-with slider
+with sliders:
 	BMI_slider = st.slider("BMI", min_value=15, max_value=40)
 	physhealth_slider = st.slider( "Now thinking about your physical health, which includes physical illness and injury, for how many days during the past 30 days was your physical health unwell", min_value=0, max_value=30)
 	mental_slider = st.slider( "Thinking about your mental health, for how many days during the past 30 days was your mental health not good?", min_value=0, max_value=30)
