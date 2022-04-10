@@ -33,5 +33,5 @@ AgeCategory = {0:"18-24", 1:"25-29", 2:"30-34", 3:"35-39", 4:"40-44", 5:"45-49",
 
 with left:
 	Smoking_radio = st.radio( "Smoking", list(Smoking.keys()), format_func=lambda x : Smoking[x] )
-	
+	AlcoholDrinking_radio = st.radio( "AlcoholDrinking", list(AlcoholDrinking.keys()), format_func=lambda x : AlcoholDrinking[x] )
 
