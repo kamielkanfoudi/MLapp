@@ -33,14 +33,14 @@ AgeCategory = {0:"18-24", 1:"25-29", 2:"30-34", 3:"35-39", 4:"40-44", 5:"45-49",
 
 with left:
 	Smoking_radio = st.radio( "Smoking", list(Smoking.keys()), format_func=lambda x : Smoking[x] )
-	AlcoholDrinking_radio = st.radio( "AlcoholDrinking", list(AlcoholDrinking.keys()), format_func=lambda x : AlcoholDrinking[x])
+	AlcoholDrinking_radio = st.radio( "Do you drink alcohol heavily? (Heavy drinkers (adult men having more than 14 drinks per week and adult women having more than 7 drinks per week)", list(AlcoholDrinking.keys()), format_func=lambda x : AlcoholDrinking[x])
 	Age_radio = st.radio( "Age", list(AgeCategory.keys()), format_func=lambda x : AgeCategory[x] )
-	GenHealth_radio = st.radio( "GenHealth", list(GenHealth.keys()), format_func=lambda x : GenHealth[x] )
+	GenHealth_radio = st.radio( "Would you say that in general your health is...", list(GenHealth.keys()), format_func=lambda x : GenHealth[x] )
 	Diabetic_radio = st.radio( "Diabetic", list(Diabetic.keys()), format_func=lambda x : Diabetic[x] )
 	Race_radio = st.radio( "Race", list(Race.keys()), format_func=lambda x : Race[x] )
-	SkinCancer_radio = st.radio( "Skin Cancer", list(SkinCancer.keys()), format_func=lambda x : SkinCancer[x] )
-	KidneyDisease_radio = st.radio( "Kidney Disease", list(KidneyDisease.keys()), format_func=lambda x : KidneyDisease[x] )
-	Asthma_radio = st.radio( "Asthma", list(Asthma.keys()), format_func=lambda x : Asthma[x] )
+	SkinCancer_radio = st.radio( "Have you had Skin Cancer?", list(SkinCancer.keys()), format_func=lambda x : SkinCancer[x] )
+	KidneyDisease_radio = st.radio( "Have you had a Kidney Disease?", list(KidneyDisease.keys()), format_func=lambda x : KidneyDisease[x] )
+	Asthma_radio = st.radio( "Do you have asthma?", list(Asthma.keys()), format_func=lambda x : Asthma[x] )
 					 
 					 
 					 
