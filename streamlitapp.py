@@ -14,10 +14,8 @@ with overview:
 	st.title("Predicting Heart Disease")
 	st.markdown("Predicting probability of getting heart disease")
 #filename = "RFC_model-sv.sv"
-#filename = "
+filename = "PLG_model.sv"
 model = pickle.load(open(filename,'rb'))
-
-#test
 
 Smoking = {0:"No",1:"Yes"}
 AlcoholDrinking = {0:"No",1:"Yes"}
