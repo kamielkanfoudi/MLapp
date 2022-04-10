@@ -1,9 +1,7 @@
-import streamlit as st
-import pandas as pd 
-import altair as alt
-import pickle
-import sklearn as sk
 
+import streamlit as st
+import pickle
+from datetime import datetime
 
 
 filename = "RFC_model-sv.sv"
