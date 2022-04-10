@@ -52,9 +52,32 @@ BMI_slider = st.slider("BMI", min_value=15, max_value=40)
 physhealth_slider = st.slider( "Now thinking about your physical health, which includes physical illness and injury, for how many days during the past 30 days was your physical health unwell", min_value=0, max_value=30)
 mental_slider = st.slider( "Thinking about your mental health, for how many days during the past 30 days was your mental health not good?", min_value=0, max_value=30)
 sleep_slider = st.slider( "On average, how many hours of sleep do you get in a 24-hour period?", min_value=0, max_value=24)
-  
+ 
 	
-					 
+data = [[Smoking_radio, 
+	AlcoholDrinking_radio, 
+	Stroke_radio, 
+	DiffWalking_radio,
+	PhysicalActivity_radio,
+	Diabetic_radio,
+	SkinCancer_radio,
+	KidneyDisease_radio,
+	Asthma_radio,
+	Age_radio,
+	GenHealth_radio,
+	Race_radio,
+	Sex_radio,
+	BMI_slider, 
+	physhealth_slider, 
+	mental_slider, 
+	sleep_radio]]
+disease = model.predict(data)
+s_confidence = model.predict_proba(data)
+
+with prediction:
+	st.header("Heart Disease? {0}".format("Yes" if disease[0] == 1 else "No"))
+	st.subheader("Confidence {0:.2f} %".format(s_confidence[0][disease][0] * 100))
+
 					 
 					 
 
