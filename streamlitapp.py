@@ -4,4 +4,8 @@ import altair as alt
 import pickle
 
 
+
+filename = "RFC_model-sv.sv"
+model = pickle.load(open(filename,'rb'))
+
 st.title('Predicting Heart Disease')
