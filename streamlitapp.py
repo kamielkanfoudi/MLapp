@@ -13,7 +13,7 @@ prediction = st.container()
 with overview:
 	st.title("Predicting Heart Disease")
 	st.markdown("Predicting probability of getting heart disease using a Random Forest Classifier and CDC data.")
-filename = "RFC_model.sv"
+filename = "RFC_model-sv.sv"
 #filename = "PLG_model.sv"
 model = pickle.load(open(filename,'rb'))
 
@@ -55,23 +55,23 @@ with sliders:
 	sleep_slider = st.slider( "On average, how many hours of sleep do you get in a 24-hour period?", min_value=0, max_value=24)
  
 	
-data = [[Smoking_radio, 
+data = [[BMI_slider,
+	Smoking_radio, 
 	AlcoholDrinking_radio, 
-	Stroke_radio, 
+	Stroke_radio,
+	PhysicalHealth_radio,
+	mental_slider,
 	DiffWalking_radio,
-	PhysicalActivity_radio,
-	Diabetic_radio,
-	SkinCancer_radio,
-	KidneyDisease_radio,
-	Asthma_radio,
-	Age_radio,
-	GenHealth_radio,
-	Race_radio,
 	Sex_radio,
-	BMI_slider, 
-	physhealth_slider, 
-	mental_slider, 
-	sleep_slider]]
+	Age_radio,
+	Race_radio,
+	Diabetic_radio,
+	physhealth_slider,
+	GenHealth_radio,
+	sleep_slider,
+	Asthma_radio,
+	KidneyDisease_radio,
+	SkinCancer_radio]]
 disease = model.predict(data)
 s_confidence = model.predict_proba(data)
 
