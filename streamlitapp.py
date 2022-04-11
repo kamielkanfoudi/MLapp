@@ -13,7 +13,7 @@ prediction = st.container()
 with overview:
 	st.title("Predicting Heart Disease")
 	st.markdown("Predicting probability of getting heart disease using a Random Forest Classifier and CDC data.")
-filename = "PLG_model.sv"
+filename = "RFC_model.sv"
 #filename = "PLG_model.sv"
 model = pickle.load(open(filename,'rb'))
 
